@@ -1,0 +1,12 @@
+server.host: "0.0.0.0"
+server.port: 5601
+elasticsearch.hosts: [ "http://elasticsearch:9200" ]
+
+xpack.encryptedSavedObjects.encryptionKey: f65c9397177a82654d25fd8edd72be72
+xpack.reporting.encryptionKey: 5c7b7c2c657130d56a70dc245565cc2a
+xpack.security.encryptionKey: 4bcabd7e80b548a9190450fe420776d7
+
+xpack.actions.customHostSettings:
+  - url: "smtps://smtp.gmail.com:465"
+    ssl:
+      rejectUnauthorized: false  # Bỏ qua kiểm tra chứng chỉ
